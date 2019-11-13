@@ -6,12 +6,42 @@
 
   <div class="order-summary jumbotron">
     <h4>Thank you for your order!</h4>
-    <tbody>
-      <% @order.line_items.each do |item| %>
-        <p><%= item.inspect %></p>
-        <div><%= @enhance_cart.inspect %></div>
-      <% end %>
-    </tbody>
+    
+    <div class="panel panel-default items">
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th colspan="2">Product</th>
+            <th>Quantity</th>
+            <th>Price</th>
+          </tr>
+        </thead>
+        <tbody>
+          <% @order.line_items.each do |item| %>
+            <%= render 'item', product: item.product, quantity: item.quantity  %>
+          <% end %>
+        </tbody>
+        <tfoot>
+          <tr>
+            <th>
+              Email:
+            </th>
+            <th>
+              <%= @order.email %>
+            </th>
+            <th>
+              Total:
+            </th>
+            <th>
+              <%= "$#{@order.total_cents / 100.0}" %>
+            </th>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+    
+    
+    
     
   </div>
 

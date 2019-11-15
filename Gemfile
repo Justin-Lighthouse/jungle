@@ -36,6 +36,8 @@ gem 'rmagick'
 gem 'stripe'
 gem 'faker'
 
+gem 'bcrypt', '~> 3.1.7'
+
 # gem 'dotenv', '~> 2.1', '>= 2.1.1'
 
 # Use Capistrano for deployment

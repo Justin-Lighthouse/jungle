@@ -36,8 +36,6 @@ gem 'rmagick'
 gem 'stripe'
 gem 'faker'
 
-gem 'bcrypt', '~> 3.1.7'
-
 # gem 'dotenv', '~> 2.1', '>= 2.1.1'
 
 # Use Capistrano for deployment
@@ -48,6 +46,7 @@ group :development, :test do
   gem 'byebug'
   gem 'quiet_assets'
   gem 'dotenv-rails'
+  gem 'rspec-rails', '~> 3.5'
 end
 
 group :development do

@@ -2,6 +2,13 @@
 
 A mini e-commerce application built with Rails 4.2 for purposes of teaching Rails by example.
 
+## Here are some pictures
+
+![Image of home screen](https://i.gyazo.com/ae355a6fe5aba0a4e1580d8c0ec381e0.png)
+![Image of product details](https://i.gyazo.com/8d42b7713127e5864f06b6320989df87.png)
+![Image of cart](https://i.gyazo.com/571033fde2a1c3b49e133ecae6d7ce13.png)
+![Image of order](https://i.gyazo.com/35fc02120d9017b010fd5448c3d9af5f.png)
+
 
 ## Setup
 
